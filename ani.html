@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation{
+            border: 2px solid black;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .animation:hover{
+            animation: colors 3s linear infinite;
+        }
+        
+        @keyframes colors{
+            0%{
+                background-color: white;
+                color: black;
+                border: 1px solid red;
+            }
+            25%{
+                background-color: aqua;
+                color: tomato;
+                border: 1px solid yellowgreen;
+
+            }
+            50%{
+                background-color: rgb(113, 113, 223);
+                color:black ;
+                border: 1px solid gold;
+            }
+            75%{
+                background-color: beige;
+                color: blueviolet;
+                border: 1px solid tomato;
+            }
+            100%{
+                background-color: yellow;
+                color:red ;
+                border: 1px solid blue;
+                transform: rotate(120deg) skew(20deg) translate(30px) scale(2);
+                
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="animation">
+          Toy
+        </div>
+    
+    
+</body>
+</html>

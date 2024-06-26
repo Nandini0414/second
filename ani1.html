@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-container{
+            border: 1px solid black;
+            max-width: 270px;
+            height:350px ;
+            position: relative;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            transition: all 1000ms linear;
+            overflow: hidden;
+            
+         }
+         @keyframes slide-out{
+            100%{
+                transform: translateY(400px);
+                opacity: 0;
+            }
+        }
+        .image-container:hover img{
+            opacity: 1;
+            animation: slide-in 1s linear;
+        }
+
+        @keyframes slide-in {
+            0%{
+                transform: translateX(-400px) rotate(360deg) skew(100deg) scale(1);
+                opacity: 0;
+            }
+            
+        }
+        .image-container img{
+            opacity: 0;
+            width: 100%;
+            animation: slide-out 1s linear;
+            transition: all 1s linear;
+            position: absolute;
+            left: 0;
+            top: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div class="content">
+                 cutie
+
+            </div>
+            <img src="https://i.pinimg.com/564x/69/c6/ce/69c6ce2cf7416a5227fb405685b9a3f0.jpg">
+            </div>
+           
+    </div>
+</body>
+</html>
